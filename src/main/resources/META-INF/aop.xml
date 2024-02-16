@@ -1,0 +1,10 @@
+<aspectj>
+    <weaver options="-XnoInline -Xreweavable"><!-- -verbose -showWeaveInfo-->
+        <include within="software.potthoff..*"/>
+    </weaver>
+    <aspects>
+        <aspect name="software.potthoff.aopmvp.aspect.MethodBuilder"/>
+        <aspect name="software.potthoff.aopmvp.aspect.PerformanceLogging"/>
+    </aspects>
+</aspectj>
+
